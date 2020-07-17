@@ -16,7 +16,7 @@ public class TestTerminal {
             execCmd("openssl enc -des-cbc -in p.jpg -out mahoa.enc -iv 0000000000000000 -K " + key);
             System.out.println("Da ma hoa-----------");
             // giai ma mahoa.ecn -> newP.jpg
-            execCmd("openssl enc -des-cbc -d -in mahoa.enc -out newP.jpg -iv 0000000000000000 -K " + key);
+            execCmd("openssl enc -des-cbc -d -in mahoa.enc -out newP.jpg -iv 0000000000000000 -K " + key); // hello
             System.out.println("Da giai ma----------");
         } catch (IOException e) {
             e.printStackTrace();
